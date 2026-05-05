@@ -52,3 +52,18 @@ function joinNames(separator, ...names) {
 }
 
 console.log(joinNames(", ", "Priya", "Aarav", "Riya"));
+
+//===============================================================================================================================================
+
+//BONUS TASK
+const defaults = { theme: "light", lang: "en", notifications: true };
+const userPrefs = { theme: "dark", fontSize: 16 };
+
+const merged = { ...defaults, ...userPrefs };
+console.log(merged);
+
+function applyPrefs(defaults, prefs) {
+  return { ...defaults, ...prefs };
+}
+const result = applyPrefs(defaults, userPrefs);
+console.log(result);
