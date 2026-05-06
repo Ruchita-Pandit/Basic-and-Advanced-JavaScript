@@ -1,6 +1,6 @@
 const title = document.querySelector("#title");
  
-title.textContent = "Hello, Gokul!";  
+title.textContent = "Hello, Ruchita!";  
 title.style.color = "crimson";
 title.style.fontFamily = "Georgia, serif";
  
