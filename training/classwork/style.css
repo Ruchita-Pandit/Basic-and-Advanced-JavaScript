@@ -7,7 +7,7 @@ body {
 
 #name {
   font-size: 40px;
-  color: #007bff;
+  color: #000000;
   margin-bottom: 20px;
 }
 
@@ -15,12 +15,12 @@ button {
   padding: 10px 20px;
   font-size: 16px;
   border: none;
-  background-color: #28a745;
+  background-color: #000a03;
   color: white;
   border-radius: 5px;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #218838;
+  background-color: #89cf98;
 }
