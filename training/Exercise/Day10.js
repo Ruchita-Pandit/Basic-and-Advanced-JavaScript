@@ -9,15 +9,8 @@ function changeTheme(){
     document.body.classList.toggle("dark")
 }
  
- 
- 
- 
- 
- 
- 
- 
- 
- 
+//===================================================================================================================================================================================================== 
+
 const names = ["Priya", "Aarav", "Riya", "Kabir"];
 const nameList = document.querySelector("#names-list")
 names.forEach((value,index)=>{
@@ -28,15 +21,8 @@ names.forEach((value,index)=>{
     nameList.appendChild(li)
 })
  
- 
- 
- 
- 
- 
- 
- 
- 
- 
+//=========================================================================================================================================================================== 
+
 const product = { name: "Laptop", price: 60000, brand: "Dell" };
  
 const card = document.createElement("div")
