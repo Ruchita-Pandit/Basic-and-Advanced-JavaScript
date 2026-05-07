@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Event Listener Example</title>
 
-  <!-- CSS -->
   <style>
     body {
       font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+
       display: flex;
+      flex-direction: column;   /* Stack items vertically */
       justify-content: center;
       align-items: center;
+
       height: 100vh;
-      background-color: #f4f4f4;
+      gap: 20px; /* space between elements */
     }
 
     #my-btn {
@@ -31,12 +34,44 @@
       background-color: darkblue;
       transform: scale(1.05);
     }
+
+    #name-input {
+      padding: 10px;
+      width: 250px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    p {
+      color: #555;
+    }
   </style>
 </head>
+
 <body>
+
+  <h1>Keyboard Event Example</h1>
 
   <!-- Button -->
   <button id="my-btn">Click Me</button>
+
+  <!-- Input -->
+  <input 
+    type="text" 
+    id="name-input" 
+    placeholder="Type something..."
+  >
+
+  <p>Open Console (F12) to see events</p>
+
+  <h2>Todo List</h2>
+
+  <ul id="todo-list">
+    <li data-id="1">Buy milk</li>
+    <li data-id="2">Walk dog</li>
+    <li data-id="3">Pay bills</li>
+  </ul>
 
   <!-- JavaScript -->
   <script src="Day11.js"></script>
