@@ -9,6 +9,8 @@
       console.log("Second handler also fires");
     });*/
 
+//========================================================================================================================================================================================
+
 /*const btn = document.querySelector("#my-btn");
 
 btn.addEventListener("click", (e) => {
@@ -29,6 +31,8 @@ input.addEventListener("input", (e) => {
 document.addEventListener("keydown", (e) => {
   console.log("Pressed:", e.key);
 });*/
+
+//============================================================================================================================================================================================================================================
 
 // WITHOUT delegation — one listener per item, repeated work
 // document.querySelectorAll("#todo-list li").forEach(li => {
