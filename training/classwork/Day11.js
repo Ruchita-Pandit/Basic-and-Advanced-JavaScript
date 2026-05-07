@@ -31,11 +31,11 @@ document.addEventListener("keydown", (e) => {
 });*/
 
 // WITHOUT delegation — one listener per item, repeated work
-document.querySelectorAll("#todo-list li").forEach(li => {
-  li.addEventListener("click", () => {
-    li.classList.toggle("done");
-  });
-});
+// document.querySelectorAll("#todo-list li").forEach(li => {
+//   li.addEventListener("click", () => {
+//     li.classList.toggle("done");
+//   });
+// });
 
 // WITH delegation — ONE listener on the parent
 const list = document.querySelector("#todo-list");
