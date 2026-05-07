@@ -57,8 +57,7 @@ document.addEventListener("keydown", (e) => {
 
 //============================================================================================================================================================================================================================================
 
-const box = document.querySelector("#box");
-
+/*const box = document.querySelector("#box");
 box.addEventListener("click",        () => console.log("click"));
 box.addEventListener("dblclick",     () => console.log("double click"));
 box.addEventListener("mouseover",    () => box.classList.add("hover"));
@@ -66,9 +65,36 @@ box.addEventListener("mouseout",     () => box.classList.remove("hover"));
 box.addEventListener("contextmenu",  (e) => {
   e.preventDefault();
   console.log("right-clicked at", e.clientX, e.clientY);
-});
+});*/
 
 //============================================================================================================================================================================================================================================
+
+const input = document.querySelector("#search");
+
+// LIVE — best for "as you type" updates
+input.addEventListener("input", (e) => {
+  console.log("Value now:", e.target.value);
+});
+
+// Specific keys
+input.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    console.log("Search:", e.target.value);
+  }
+  if (e.key === "Escape") {
+    e.target.value = "";
+  }
+});
+
+// Modifier keys
+document.addEventListener("keydown", (e) => {
+  if (e.ctrlKey && e.key === "s") {
+    e.preventDefault();   // override browser save
+    console.log("Custom save");
+  }
+});
+
+//====================================================================================================================================================================================================================================================================
 
 /*// WITHOUT delegation — one listener per item, repeated work
 // document.querySelectorAll("#todo-list li").forEach(li => {
