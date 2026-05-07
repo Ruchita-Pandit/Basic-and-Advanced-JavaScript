@@ -52,17 +52,83 @@
       color: gray;
       background-color: #dcdcdc;
     }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 250px;
+    }
+
+    input {
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      background-color: royalblue;
+      color: white;
+      cursor: pointer;
+    }
+
+    a {
+      text-decoration: none;
+      color: darkblue;
+      font-size: 18px;
+    }
+
+    #my-btn {
+      padding: 12px 24px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      background-color: royalblue;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    #my-btn:hover {
+      background-color: darkblue;
+      transform: scale(1.05);
+    }
+
+    #name-input {
+      padding: 10px;
+      width: 250px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    p {
+      color: #555;
+    }
+
+    .done {
+      text-decoration: line-through;
+      color: gray;
+      background-color: #dcdcdc;
+    }
+
   </style>
 </head>
 
 <body>
 
+  <!--
   <h1>Keyboard Event Example</h1>
 
-  <!-- Button -->
+  <!- Button ->
   <button id="my-btn">Click Me</button>
 
-  <!-- Input -->
+  <!- Input ->
   <input 
     type="text" 
     id="name-input" 
@@ -78,6 +144,26 @@
     <li data-id="2">Walk dog</li>
     <li data-id="3">Pay bills</li>
   </ul>
+  -->
+
+  <!--
+<!- Form ->
+    <form id="login-form">
+    <input type="text" placeholder="Enter username">
+    <input type="password" placeholder="Enter password">
+
+    <button type="submit">Submit</button>
+    </form>
+
+<!- Link ->
+  <a href="https://google.com">Go to Google</a>
+
+  <p>Right-click is disabled on this page</p>
+-->
+
+<div id="box">
+    Click Me
+</div>
 
   <!-- JavaScript -->
   <script src="Day11.js"></script>

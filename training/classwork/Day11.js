@@ -9,7 +9,7 @@
       console.log("Second handler also fires");
     });*/
 
-//========================================================================================================================================================================================
+//============================================================================================================================================================================================================
 
 /*const btn = document.querySelector("#my-btn");
 
@@ -32,9 +32,45 @@ document.addEventListener("keydown", (e) => {
   console.log("Pressed:", e.key);
 });*/
 
+//========================================================================================================================================================================================
+
+    /*// Form submit
+    const form = document.querySelector("#login-form");
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+
+      console.log("Custom form handling here");
+    });
+
+    // Link click
+    const link = document.querySelector("a");
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+
+      console.log("Intercepted");
+    });
+
+    // Disable right click
+    document.addEventListener("contextmenu", (e) => {
+      e.preventDefault();
+    });*/
+
 //============================================================================================================================================================================================================================================
 
-// WITHOUT delegation — one listener per item, repeated work
+const box = document.querySelector("#box");
+
+box.addEventListener("click",        () => console.log("click"));
+box.addEventListener("dblclick",     () => console.log("double click"));
+box.addEventListener("mouseover",    () => box.classList.add("hover"));
+box.addEventListener("mouseout",     () => box.classList.remove("hover"));
+box.addEventListener("contextmenu",  (e) => {
+  e.preventDefault();
+  console.log("right-clicked at", e.clientX, e.clientY);
+});
+
+//============================================================================================================================================================================================================================================
+
+/*// WITHOUT delegation — one listener per item, repeated work
 // document.querySelectorAll("#todo-list li").forEach(li => {
 //   li.addEventListener("click", () => {
 //     li.classList.toggle("done");
@@ -56,4 +92,4 @@ list.addEventListener("click", (e) => {
 const newLi = document.createElement("li");
 newLi.textContent = "Brand new task";
 newLi.dataset.id = "4";
-list.appendChild(newLi);
+list.appendChild(newLi);*/
